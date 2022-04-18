@@ -1,0 +1,29 @@
+
+# tee ratkaisu tänne
+
+def kopioi_ja_lisaa(sudoku, rivi, sarake, luku):
+
+    uusi = []
+
+    for i in sudoku:
+        uusi.append(i)
+        
+    uusi[rivi][sarake] = luku
+
+    return uusi
+
+if __name__ == '__main__':
+
+    s = [
+  [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ 0, 5, 0, 0, 0, 0, 0, 0, 0 ],
+  [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ],]
+
+    kopio = kopioi_ja_lisaa(s, 1, 1, 5)
+    print(kopio)
